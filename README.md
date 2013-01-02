@@ -21,7 +21,7 @@ python web framework（讨论后选型）+sqlalchemy+postgresql+mako+jquery+high
  * -charts：highcharts（js SVG）
  * -ORM：sqlalchemy
  * -database：postgresql
- * -python web framework：wheezy.web（推荐），werkzeug
+ * -python web framework：wheezy.web（推荐），tornado，werkzeug
  * -ui：jquery
 
 
