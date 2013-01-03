@@ -20,6 +20,7 @@ python web framework（讨论后选型）+sqlalchemy+postgresql+mako+jquery+high
  * -server：gevent或者asyncoro
  * -charts：highcharts
  * -ORM：sqlalchemy
+ * -template：mako、wheezy.templates、pytenjin、jinja2
  * -database：postgresql
  * -python web framework：wheezy.web（推荐），tornado，werkzeug
  * -ui：jquery + Bootstrap
