@@ -18,17 +18,17 @@ class olap_fact_database(Base):
     loaded = Column(boolean,readonly = True )
 
 
-    def __init__(self, name, db_name, db_login,db_password,db_host,db_port,db_type,con_url,table_ids,loaded):
+    def __init__(self, name, db_name, db_login, db_password, db_host, db_port, db_type, con_url, table_ids, loaded):
         self.name = name
-        self.name = db_name
-        self.name = db_login
-        self.name = db_password
-        self.name = db_host
-        self.name = db_port
-        self.name = db_type
-        self.name = con_url
-        self.name = table_ids
-        self.name = loaded
+        self.db_name = db_name
+        self.db_login = db_login
+        self.db_password = db_password
+        self.db_host = db_host
+        self.db_port = db_port
+        self.db_type = db_type
+        self.con_url = con_url
+        self.table_ids = table_ids
+        self.loaded = loaded
 
 	def __repr__(self):
         return "<olap_fact_database('%s','%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')>" % (self.name,
