@@ -13,7 +13,8 @@ Base.query = db_session.query_property()
 
 def init_db():
     from models import *
-    Base.metadata.create_all(bind=engine)
+    Base.metadata.create_all(bind=db_engine)
+
 '''
 #考虑增加用户数据选择
 # mysql
