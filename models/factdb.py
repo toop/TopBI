@@ -1,6 +1,5 @@
 # -*- coding: UTF-8 -*-
 from sqlalchemy import Column, Integer, String
-from sqlalchemy import Column, Integer, String
 from database import Base
 
 class olap_fact_database(Base):
