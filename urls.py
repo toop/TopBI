@@ -1,5 +1,4 @@
-""" ``urls`` module.
-"""
+# -*- coding: UTF-8 -*-
 
 from wheezy.routing import url
 from wheezy.web.handlers import file_handler

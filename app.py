@@ -1,5 +1,4 @@
-""" ``app`` module.
-"""
+# -*- coding: UTF-8 -*-
 
 from wheezy.http import WSGIApplication
 from wheezy.http.middleware import http_cache_middleware_factory
