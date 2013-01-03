@@ -1,20 +1,20 @@
 # -*- coding: UTF-8 -*-
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Boolean
 from database import Base
 
 class olap_fact_database(Base):
     __tablename__ = 'olap.fact.database'
-    id = Column(Integer, Sequence('user_id_seq'), primary_key=True)
+    id = Column(Integer, primary_key=True)
     name = Column(String(50),nullable=False,unique=True)
     db_name = Column(String(50),nullable=False,unique=True)
     db_login = Column(String(50),nullable=False)
     db_password = Column(String(50),nullable=False) 
     db_host = Column(String(64),nullable=False)
-    db_port = Column(integer,nullable=False)
+    db_port = Column(Integer,nullable=False)
     # db_type = ([('mysql','MySQL' ),('postgres','PostgreSQL' ),('oracle','Oracle' )],'Database type',nullable=False),
     #con_url =  Column.function(_connection_get,method = True,type = 'char',string = 'Connection URL',size = 128 )
     #table_ids = one2many('olap.database.tables','fact_database_id','Tables' )
-    loaded = Column(boolean,readonly = True )
+    loaded = Column(Boolean)
 
 
     def __init__(self, name, db_name, db_login, db_password, db_host, db_port, db_type, con_url, table_ids, loaded):
