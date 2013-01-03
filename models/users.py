@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String
 from datetime import datetime
 
-class User(Base):
+class users(Base):
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True)
@@ -19,4 +19,4 @@ class User(Base):
 		self.created_on = created_on or datetime.now()
 
     def __repr__(self):
-       return "<User('%s','%s', '%s', '%s')>" % (self.name, self.fullname, self.email, self.password)
+       return "<users('%s','%s', '%s', '%s')>" % (self.name, self.fullname, self.email, self.password)
