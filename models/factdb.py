@@ -37,6 +37,8 @@ class olap_fact_database(Base):
 												    self.db_password,
 												    self.db_host,
 												    self.db_port,
-												    self.db_type,										  self.con_url,
+												    self.db_type,
+												    self.con_url,
 												    self.table_ids,
-												    self.loaded)
+												    self.loaded
+												    )
