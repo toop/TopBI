@@ -51,18 +51,18 @@ class list(BaseHandler):
 		return response
 '''
 class list(BaseHandler):
-	#@handler_cache(CacheProfile('server', duration=timedelta(minutes=15),
-    #   vary_environ=['HTTP_ACCEPT_ENCODING']))
-	#@handler_transforms(gzip_transform(compress_level=9, 
-	#	min_length=250))
-	
-	def get(self):
-		#greeting = greeting or Greeting()
-		#session=Session()
-		#with con as db:
-		response=HTTPResponse()
-		self.render_response ('ttt.mako')
-		return response
+    #@handler_cache(CacheProfile('server', duration=timedelta(minutes=15),
+    #vary_environ=['HTTP_ACCEPT_ENCODING']))
+    #@handler_transforms(gzip_transform(compress_level=9, 
+    #min_length=250))
+
+    def get(self):
+        #greeting = greeting or Greeting()
+        #session=Session()
+        #with con as db:
+        response=HTTPResponse()
+        self.render_response ('ttt.mako')
+        return response
 
 '''
 

@@ -8,7 +8,9 @@ from wheezy.web.middleware import path_routing_middleware_factory
 
 from config import options
 from urls import all_urls
+#from database import init_db
 
+#init_db()
 
 main = WSGIApplication([
     bootstrap_defaults(url_mapping=all_urls),
