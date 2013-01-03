@@ -9,7 +9,7 @@ class olap_fact_database(Base):
     name = Column(String(50),nullable=False,unique=True)
     db_name = Column(String(50),nullable=False,unique=True)
     db_login = Column(String(50),nullable=False)
-    db_password Column(String(50),nullable=False) 
+    db_password = Column(String(50),nullable=False) 
     db_host = Column(String(64),nullable=False)
     db_port = Column(integer,nullable=False)
     # db_type = ([('mysql','MySQL' ),('postgres','PostgreSQL' ),('oracle','Oracle' )],'Database type',nullable=False),
@@ -30,13 +30,13 @@ class olap_fact_database(Base):
         self.table_ids = table_ids
         self.loaded = loaded
 
-	def __repr__(self):
-            return "<olap_fact_database('%s','%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')>" % (self.name,
-													self.db_name,
-													self.db_login,
-													self.db_password,
-													self.db_host,
-													self.db_port,
-													self.db_type,										  self.con_url,
-													self.table_ids,
-													self.loaded)
+    def __repr__(self):
+        return "<olap_fact_database('%s','%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')>" % (self.name,
+												    self.db_name,
+												    self.db_login,
+												    self.db_password,
+												    self.db_host,
+												    self.db_port,
+												    self.db_type,										  self.con_url,
+												    self.table_ids,
+												    self.loaded)
