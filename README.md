@@ -15,14 +15,14 @@ QQ群：285504816
 
 架构：
 ------
-python web framework（讨论后选型）+sqlalchemy+postgresql+mako+jquery+highcharts+gevent或者asyncoro
+python web framework（讨论后选型）+sqlalchemy+postgresql+mako+jquery+highcharts+gevent或者asyncoro+Bootstrap
 
  * -server：gevent或者asyncoro
- * -charts：highcharts（js SVG）
+ * -charts：highcharts
  * -ORM：sqlalchemy
  * -database：postgresql
  * -python web framework：wheezy.web（推荐），tornado，werkzeug
- * -ui：jquery
+ * -ui：jquery + Bootstrap
 
 
 文件夹：
