@@ -7,12 +7,12 @@ from sqlalchemy.ext.declarative import declarative_base
 db_engine = create_engine('postgresql://admin:admin@localhost/topbi',echo = True)
 db_session = scoped_session(sessionmaker(autocommit=False,
                                          autoflush=False,
-                                         bind=engine))
+                                         bind=db_engine))
 Base = declarative_base()
 Base.query = db_session.query_property()
 
 def init_db():
-    frome models import *
+    from models import *
     Base.metadata.create_all(bind=engine)
 '''
 #考虑增加用户数据选择
