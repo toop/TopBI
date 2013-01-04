@@ -45,7 +45,7 @@ python web framework（讨论后选型）+sqlalchemy+postgresql+mako+jquery+high
  * -database：postgresql
  * -python web framework：wheezy.web（推荐），tornado，werkzeug
  * -ui：jquery + Bootstrap
-
+ 
 
 文件夹：
 ---------
