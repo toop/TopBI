@@ -13,9 +13,26 @@
 
 QQ群：285504816
 
+模块说明：
+---------
+Olap模块：联机分析，通过用户自配置cubes满足分析需要
+业务分析：经营分析
+KPI：
+DM：数据挖掘
+营销决策：通过分析，提供营销决策支持
+机器学习：根据历史数据进行机器学习训练
+
+应用说明：
+---------
+1、假设已经建立数据仓库
+2、对企业数据按照需要进行汇总（比如按照分公司、时间、地区、产品线），并以数字或者图表展示，同时能看到明细
+3、对企业数据进行同比（去年同时间段的数据对比）
+4、让用户根据需要自己增加分析模型：毛利、产品线、库存、滞销、库存占用、坪效、资金.......
+
+
 架构：
 ------
-python web framework（讨论后选型）+ sqlalchemy + postgresql + mako + jquery + highcharts + gevent或者asyncoro + Bootstrap
+python web framework（讨论后选型）+sqlalchemy+postgresql+mako+jquery+highcharts+gevent或者asyncoro+Bootstrap
  * -env:python 2.7.3
  * -server：gevent或者asyncoro
  * -charts：highcharts
@@ -33,5 +50,5 @@ python web framework（讨论后选型）+ sqlalchemy + postgresql + mako + jque
  * -模块: models
  * -视图: views
 
-  
-       
+
+ 
