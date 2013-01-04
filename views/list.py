@@ -104,3 +104,5 @@ class AddHandler(BaseHandler):
         cached.dependency.delete('d_list')
         return self.see_other_for('list')
 '''
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

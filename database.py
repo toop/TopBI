@@ -33,3 +33,5 @@ mssql_db = create_engine('mssql://scott:tiger@topbi')
 # firebird
 firebird_db = create_engine('firebird://scott:tiger@localhost/topbi.gdm')
 '''
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

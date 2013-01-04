@@ -21,3 +21,5 @@ class User(Base):
 
     def __repr__(self):
         return "<User('%s','%s', '%s', '%s')>" % (self.name, self.fullname, self.email, self.password)
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

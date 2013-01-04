@@ -41,3 +41,5 @@ class olap_fact_database(Base):
 												    self.table_ids,
 												    self.loaded
 												    )
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

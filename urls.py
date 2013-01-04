@@ -12,3 +12,5 @@ all_urls = [
         file_handler(root='static/'),
         name='static')
 ]
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
