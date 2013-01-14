@@ -1,4 +1,6 @@
-from sqlalchemy import Column, Integer, String
+# -*- encoding: utf-8 -*-
+
+from sqlalchemy import Column, Integer, Boolean, String, ForeignKey
 from datetime import datetime
 from database import Base
 

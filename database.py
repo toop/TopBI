@@ -12,7 +12,7 @@ Base = declarative_base()
 Base.query = db_session.query_property()
 
 def  init_db():
-    from models import users,factdb,olapcube
+    from models import users,factdb
     Base.metadata.create_all(bind=db_engine)
 
 '''
