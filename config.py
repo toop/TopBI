@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #coding=utf-8
 
+## wheezy
 from wheezy.caching.memory import MemoryCache
 from wheezy.caching.patterns import Cached
 from wheezy.html.ext.mako import widget_preprocessor
@@ -13,12 +14,13 @@ options = {
     'render_template': MakoTemplate(
         directories=['templates'],
         filesystem_checks=False,
-        preprocessor=[widget_preprocessor]
+        preprocessor=[widget_preprocessor],
+        input_encoding='utf-8',
+        output_encoding='utf-8',
+        default_filters=['decode.utf8']
     )
 }
 
 options.update({
     'http_cache': cache
 })
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
