@@ -47,7 +47,7 @@ dependency_links = [
 ]
 
 setup(
-    name='Topbi',
+    name='TopBI',
     version='0.1',
     description='Business intelligence Project',
     long_description=README,
