@@ -47,14 +47,14 @@ dependency_links = [
 ]
 
 setup(
-    name='mysite',
+    name='Topbi',
     version='0.1',
-    description='MySite Project',
+    description='Business intelligence Project',
     long_description=README,
-    url='https://scm.dev.local/svn/mysite/trunk',
+    url='https://scm.dev.local/svn/TopBI/trunk',
 
-    author='MySite Team',
-    author_email='mysite at dev.local',
+    author='TopBI Team',
+    author_email='totopo@163.com',
 
     license='COMMERCIAL',
     classifiers=[
