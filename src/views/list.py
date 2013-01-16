@@ -24,11 +24,11 @@ response = HTTPResponse()
 class ListHandler(BaseHandler):
     def get(self):
         name = 'world'
-        response = self.render_response('list.html',name = name)
+        response = self.render_response('public/list.html',name = name)
         return response
     def list(self):
         name = 'list.'
-        response = self.render_response('list.html', name = name)
+        response = self.render_response('public/list.html', name = name)
         return response
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
