@@ -1,9 +1,10 @@
-# -*- coding: UTF-8 -*-
+"""
+"""
 
-## wheezy
 from wheezy.http import WSGIApplication
 from wheezy.http.middleware import http_cache_middleware_factory
 from wheezy.web.middleware import bootstrap_defaults
+from wheezy.web.middleware import http_error_middleware_factory
 from wheezy.web.middleware import path_routing_middleware_factory
 
 ## project
@@ -13,11 +14,14 @@ from database import init_db ## init databases
 
 init_db()
 
-main = WSGIApplication([
-    bootstrap_defaults(url_mapping=all_urls),
-    http_cache_middleware_factory,
-    path_routing_middleware_factory
-], options)
+main = WSGIApplication(
+    middleware=[
+        bootstrap_defaults(url_mapping=all_urls),
+        http_cache_middleware_factory,
+        http_error_middleware_factory,
+        path_routing_middleware_factory
+    ],
+    options=options)
 
 
 if __name__ == '__main__':
@@ -28,3 +32,5 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         pass
     print('\nThanks!')
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

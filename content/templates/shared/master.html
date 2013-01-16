@@ -1,0 +1,29 @@
+@require(path_for)
+<!DOCTYPE html>
+<html>
+    <head>
+        @def title():
+        @end
+        <title>My Site - @title()</title>
+        <link href="@path_for('static', path='css/site.css')" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="page">
+            <div id="header">
+                <h1><a href="@path_for('default')">My Site</a></h1>
+            </div>
+            <div id="main">
+                <div id="placeholder">
+                    @def content():
+                    @end
+                    @content()\
+                </div>                
+            </div>
+            <div id="footer">Version #__version__</div>
+        </div>
+        #include("shared/snippet/script.html")
+        @def script():
+        @end
+        @script()\
+    </body>
+</html>
