@@ -40,13 +40,12 @@ QQ群：285504816
 ------
 python web framework（讨论后选型）+sqlalchemy+postgresql+mako+jquery+highcharts+gevent或者asyncoro+Bootstrap
  * -env:python 2.7.3
- * -server：gevent或者asyncoro
  * -charts：highcharts
  * -ORM：sqlalchemy
- * -template：mako、wheezy.templates、pytenjin、jinja2
+ * -template：jinja2
  * -database：postgresql
- * -python web framework：wheezy.web（推荐），tornado，werkzeug
- * -ui：jquery + Bootstrap
+ * -python web framework：tornado
+ * -ui：jquery + css
  
 
 文件夹：
