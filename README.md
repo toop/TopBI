@@ -39,13 +39,13 @@ QQ群：285504816
 架构：
 ------
 python web framework（讨论后选型）+sqlalchemy+postgresql+mako+jquery+highcharts+gevent或者asyncoro+Bootstrap
- * -env:python 2.7.3
- * -charts：highcharts
- * -ORM：sqlalchemy
- * -template：jinja2
- * -database：postgresql
- * -python web framework：tornado
- * -ui：jquery + css
+ * -env: [python 2.7.3](http://www.python.org/)
+ * -charts：[highcharts](http://www.highcharts.com/)
+ * -ORM：[sqlalchemy](http://www.sqlalchemy.org/)
+ * -template：[jinja2](http://jinja.pocoo.org/docs/)
+ * -database：[postgresql](http://www.postgresql.org/)
+ * -python web framework：[tornado](http://www.tornadoweb.org/en/stable/)
+ * -ui：[jquery + css](http://jquery.com/)
  
 
 文件夹：
