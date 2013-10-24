@@ -43,6 +43,8 @@ python web framework（讨论后选型）+sqlalchemy+postgresql+mako+jquery+high
  * -charts：[highcharts](http://www.highcharts.com/)
  * -ORM：[sqlalchemy](http://www.sqlalchemy.org/)
  * -template：[jinja2](http://jinja.pocoo.org/docs/)
+ * -machine learning:[scikit learn](http://scikit-learn.org)
+ * -Data Analysis:[pandas](pandas.pydata.org)
  * -database：[postgresql](http://www.postgresql.org/)
  * -python web framework：[tornado](http://www.tornadoweb.org/en/stable/)
  * -ui：[jquery + css](http://jquery.com/)
